@@ -1,14 +1,14 @@
 {
   "builds": [
     {
-      "src": "mock_nasa_api.py",
+      "src": "api/main.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "mock_nasa_api.py"
+      "dest": "api/main.py"
     }
   ]
 }
